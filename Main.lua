@@ -12,7 +12,7 @@ local result = "local table = {"
 for key, value in pairs( lua_value ) do
   for k, v in pairs( value ) do
    local propertyId = string.gsub( v, "http://www.wikidata.org/entity/", "" )
-    result = result .. '["' .. propertyId .. '"] => true' .. ', '
+    result = result .. '["' .. propertyId .. '"] = true' .. ', '
   end
 end
 
